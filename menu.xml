@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="apps-accessories-menu" label="Accessories">
+		<item label="File Roller">
+			<action name="Execute">
+				<execute>
+					file-roller
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-editors-menu" label="Editors">
+		<item label="Gedit">
+			<action name="Execute">
+				<execute>
+					gedit
+				</execute>
+			</action>
+		</item>
+		<item label="Bluefish">
+			<action name="Execute">
+				<execute>
+					bluefish
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-term-menu" label="Terminals">
+		<item label="Rxvt Unicode">
+			<action name="Execute">
+				<command>
+					urxvt
+				</command>
+			</action>
+		</item>
+		<item label="Konsole">
+			<action name="Execute">
+				<command>
+					konsole
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Xterm">
+			<action name="Execute">
+				<command>
+					xterm
+				</command>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-net-menu" label="Internet">
+		<item label="Chromium">
+			<action name="Execute">
+				<execute>
+					chromium
+				</execute>
+			</action>
+		</item>
+		<item label="Ktorrent">
+			<action name="Execute">
+				<execute>
+					ktorrent
+				</execute>
+			</action>
+		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<execute>
+					thunderbird
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-office-menu" label="Office">
+		<item label="Mathematica 7">
+			<action name="Execute">
+				<execute>
+					/usr/local/Wolfram/Mathematica/7.0/Executables/mathematica
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-multimedia-menu" label="Multimedia">
+		<item label="MPlayer">
+			<action name="Execute">
+				<command>
+					gmplayer
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+					<wmclass>
+						MPlayer
+					</wmclass>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-fileman-menu" label="File Managers">
+		<item label="Thunar">
+			<action name="Execute">
+				<command>
+					Thunar
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="pcmanfm">
+			<action name="Execute">
+				<execute>
+					pcmanfm
+				</execute>
+			</action>
+		</item>
+		<item label="KDE File Manager">
+			<action name="Execute">
+				<command>
+					kfmclient openURL ~
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="apps-graphics-menu" label="Graphics">
+		<item label="Gimp">
+			<action name="Execute">
+				<command>
+					gimp
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+	</menu>
+	<menu id="system-menu" label="System">
+		<item label="Openbox Configuration Manager">
+			<action name="Execute">
+				<command>
+					obconf
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="lxappearance">
+			<action name="Execute">
+				<execute>
+					lxappearance
+				</execute>
+			</action>
+		</item>
+		<item label="Menu Configuration">
+			<action name="Execute">
+				<execute>
+					obmenu
+				</execute>
+			</action>
+		</item>
+		<item label="Manage Cups Printers">
+			<action name="Execute">
+				<command>
+					xdg-open http://localhost:631/
+				</command>
+				<startupnotify>
+					<enabled>
+						no
+					</enabled>
+					<icon>
+						cups
+					</icon>
+				</startupnotify>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="Applications"/>
+		<menu id="apps-accessories-menu"/>
+		<menu id="apps-editors-menu"/>
+		<menu id="apps-graphics-menu"/>
+		<menu id="apps-net-menu"/>
+		<menu id="apps-office-menu"/>
+		<menu id="apps-multimedia-menu"/>
+		<menu id="apps-term-menu"/>
+		<menu id="apps-fileman-menu"/>
+		<separator label="System"/>
+		<menu id="system-menu"/>
+		<separator/>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>
+					yes
+				</prompt>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>
